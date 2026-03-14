@@ -1,0 +1,91 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(0.99 0.01 93);
+  --foreground: oklch(0.24 0.02 272);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.24 0.02 272);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.24 0.02 272);
+  --primary: oklch(0.41 0.06 265);
+  --primary-foreground: oklch(0.98 0.01 93);
+  --secondary: oklch(0.92 0.03 95);
+  --secondary-foreground: oklch(0.26 0.03 271);
+  --muted: oklch(0.95 0.02 90);
+  --muted-foreground: oklch(0.52 0.04 266);
+  --accent: oklch(0.9 0.07 86);
+  --accent-foreground: oklch(0.28 0.03 272);
+  --destructive: oklch(0.58 0.22 25);
+  --destructive-foreground: oklch(0.98 0.01 93);
+  --border: oklch(0.88 0.03 90);
+  --input: oklch(0.88 0.03 90);
+  --ring: oklch(0.62 0.08 257);
+  --radius: 0.75rem;
+
+  --font-sans: "Geist Variable", "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.dark {
+  --background: oklch(0.17 0.03 267);
+  --foreground: oklch(0.96 0.01 92);
+  --card: oklch(0.22 0.03 267);
+  --card-foreground: oklch(0.96 0.01 92);
+  --popover: oklch(0.22 0.03 267);
+  --popover-foreground: oklch(0.96 0.01 92);
+  --primary: oklch(0.76 0.08 88);
+  --primary-foreground: oklch(0.21 0.03 267);
+  --secondary: oklch(0.3 0.03 267);
+  --secondary-foreground: oklch(0.96 0.01 92);
+  --muted: oklch(0.28 0.03 267);
+  --muted-foreground: oklch(0.76 0.03 90);
+  --accent: oklch(0.33 0.04 267);
+  --accent-foreground: oklch(0.96 0.01 92);
+  --destructive: oklch(0.64 0.2 25);
+  --destructive-foreground: oklch(0.96 0.01 92);
+  --border: oklch(0.34 0.03 267);
+  --input: oklch(0.34 0.03 267);
+  --ring: oklch(0.76 0.08 88);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --font-sans: var(--font-sans);
+}
+
+* {
+  @apply border-border outline-ring/50;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+}
