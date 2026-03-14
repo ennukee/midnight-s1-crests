@@ -1005,6 +1005,9 @@ function App() {
             <CardDescription className="max-w-3xl text-base text-slate-700 dark:text-slate-200">
               Calculate final pre-raid item level potential using PvP and Veteran Crests. Does not include random upgrade potential from Bountiful Delves. 
             </CardDescription>
+            <p className="text-sm text-slate-600 dark:text-slate-300">
+              Found an issue? Message <span className="font-semibold">ennukee</span> on Discord.
+            </p>
           </CardHeader>
         </Card>
 
