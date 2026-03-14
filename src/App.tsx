@@ -1200,7 +1200,18 @@ function App() {
                 <CardHeader>
                   <CardTitle>Step 2: Plan PvP Gear</CardTitle>
                   <CardDescription>
-                    For each slot, choose None, 243 Veteran, 246 Champion, or 246 Crafted.
+                    For each slot, choose None, 243 Veteran (Bloody Tokens), 246 Champion (Conquest), or 246 Crafted (Heraldry).
+                  </CardDescription>
+                  <CardDescription>
+                    To figure out what you can pick with the budget available during Heroic Week, check out {" "}
+                    <a
+                      href="https://dbowers.io/midnight-s1-pvp"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="font-semibold text-violet-700 underline decoration-violet-400/80 underline-offset-4 transition-colors hover:text-violet-800 dark:text-violet-300 dark:decoration-violet-400/70 dark:hover:text-violet-200"
+                    >
+                      this app, also made by me!
+                    </a>
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
